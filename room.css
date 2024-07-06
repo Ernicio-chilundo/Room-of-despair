@@ -1,38 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
-body{
-    background-color: #fff;
-    width: 100vw;
-    height: 100vh;
+body {
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
 }
 
-.global{
-    margin: 20vh
-}
-.room_despair{
-    width: 50vw;
-    height: 50vh;
-    background-color: #000;
-    margin: 0 auto;
-    border-radius: 15px;
+.global {
+  border: 1px red solid;
+  width: 50vw;
+  margin: 0 auto;
 }
 
-.btn_room{
-    display: flex;
-    justify-content: flex-end;
-    width: 50vw;
-    /* height: 3em; */
-    margin: 0 auto;
-    border:  1px solid red;
+.min_global {
+  margin-top: 6.5rem;
+  border: 1px red solid;
 }
 
-.btn_interno{
-    width: 80px;
-    padding: auto;
-    margin-right: 10px;
-    font: bold 1.5rem serif;
+.title_btn {
+  border: 1px red solid;
+  display: flex;
+  padding: 8px;
+  background-color: aqua;
+  border-radius: 10px 10px 0px 0px;
+
+}
+
+.title {
+  width: 50vw;
+  text-align: center;
+  border: 1px red solid;
+}
+
+.btn {
+  display: flex;
+  border: 1px red solid;
+  justify-content: space-around;
+  align-items: center;
+  width: 13vw;
+}
+
+.btn_g {
+  width: 90px;
+  font:bold 1.5rem serif;
+  border-radius: 5px;
+  padding: 6px; 
+  background-color: #000;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.room_despair {
+  height: 50vh;
+  background-color: #000;
+  border-radius: 0 0 10px 10px;
 }
