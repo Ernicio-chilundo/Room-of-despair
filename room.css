@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+}
+
+.global{
+    margin: 20vh
+}
+.room_despair{
+    width: 50vw;
+    height: 50vh;
+    background-color: #000;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.btn_room{
+    display: flex;
+    justify-content: flex-end;
+    width: 50vw;
+    /* height: 3em; */
+    margin: 0 auto;
+    border:  1px solid red;
+}
+
+.btn_interno{
+    width: 80px;
+    padding: auto;
+    margin-right: 10px;
+    font: bold 1.5rem serif;
+}

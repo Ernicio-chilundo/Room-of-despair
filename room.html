@@ -1,46 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROOM OF DESPAIR</title>
-    <link rel="stylesheet" href="../Room-of-despair/style/room.css">
+    <title>Room Of Despair</title>
+    <link rel="stylesheet" href="room.css">
 </head>
 
 <body>
-    <div id="folhas" class="folhas">
-        <a href="#" class="c1">Home</a>
-        <a href="#" class="c1">Candastro</a>
-        <a href="#" class="c1">Perguntas</a>
-        <a href="#" class="c1">Respostas</a>
-    </div>
-    <div id="caule" class="caule">
-        <!-- <div id="flores">
-            <div class="campoform">
-                <label>NOME</label>
-                <input type="text" name="f_name" id="f_name">
+    <div class="global">
+        <div class="btn_global">
+            <div></div>
+            <div class="btn_interno">
+                <button id="btn_limpar" class="btn_global">limpar</button>
+                <button id="btn_apagar" class="btn_global">apagar</button>
             </div>
-            <div class="campoform">
-                <label>E-MAIL</label>
-                <input type="email" name="f_email" id="f_email">
-            </div>
-            <div class="campoform">
-                <label>NUMERO</label>
-                <input type="text" name="f_num" id="f_num">
-            </div> -->
-        <!-- </div> -->
-        <!-- <button type="submit">Candastrar</button> -->
+        </div>
+        <div class="room_despair"></div>
 
-    </div>
-    <div id="raiz" class="raiz"></div>
-
-    <div id="espaco">
-        <iframe name="p_espaco" class="p_espaco"></iframe>
+        <div class="div_input" id="divInput">
+            <input type="text" id="perguntar">
+        </div>
     </div>
 
-    <script src="../Room-of-despair/script/room.js" type="module"></script>
+    <script src="room.js"></script>
 </body>
-
 </html>
