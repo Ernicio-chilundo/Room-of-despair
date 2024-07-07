@@ -1,22 +1,26 @@
-'use strict'
-const roomDespair = document.getElementById("roomDespair")
-const divIn = document.getElementById("divInput")
+("use strict")
 
-const divInput = document.createElement("input")
-divInput.setAttribute("type", "text")
-divInput.setAttribute("id", "perguntar")
-divInput.setAttribute("placeholder", "Coloque aqui a sua questao e click Enter para salvar")
-divIn.appendChild(divInput)
+let banco =[
+    {"db":"ROOM DESPAIR PROTO"},
+    {"db":"A viganca e um prato que se come frio"}
+]
 
+const perguntar = document.getElementById("perguntar")
 
+    const roomDespair = document.getElementById("roomDespair")
 
-divInput.addEventListener("keypress", (evt) => {
-    if (evt.key == "Enter") {
-        const certo = evt.textContent = evt.target.value
-        roomDespair.textContent = certo
+    if (evento.key == "Enter") {
+        const enviar = evento.textContent = evento.target.value
+        if (enviar !== "") {
+            roomDespair.textContent = JSON.parse(banco)
+        }else {
+            roomDespair.textContent = "Preencha o campo por favor!!!"
+        }
+
     }
 
-})
 
+}
 
+perguntar.addEventListener("keypress", executar)
 
