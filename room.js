@@ -8,6 +8,7 @@ let banco = [
 
 const perguntar = document.getElementById("perguntar")
 const roomDespair = document.getElementById("roomDespair")
+const btnApagar = document.getElementById("btnApagar")
 
 function createElement(text) {
     const createP = document.createElement("p")
@@ -16,10 +17,12 @@ function createElement(text) {
     return createP
 }
 
-const from = createElement("WELCOME")
+
+const from = createElement("Hello Welcome🙄🙄🙄!!!")
 roomDespair.appendChild(from)
 
 function content(evento) {
+    // roomDespair.textContent= " SEJA BEVIDO A PLANTAFORMA DO DESPERO"
     if (evento.key == "Enter") {
         const enviar = evento.textContent = evento.target.value
         if (enviar !== "") {
@@ -29,10 +32,17 @@ function content(evento) {
                 roomDespair.appendChild(createElement(dados.db))
             }
             evento.target.value = ""
+            
         } else {
             roomDespair.appendChild(createElement("Por favor digita algo depois pressione o Enter para salvar!!!"))
         }
-
+        function apagar (){
+            const a = roomDespair = enviar.target.value 
+            if(a){
+                a= ""
+            }
+        }
+        btnApagar.addEventListener("click",apagar)
     }
 }
 
