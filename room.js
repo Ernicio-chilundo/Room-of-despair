@@ -12,9 +12,15 @@ const btnApagar = document.getElementById("btnApagar")
 
 function createElement(text) {
     const createP = document.createElement("p")
+    createP.setAttribute("id","delete")
     createP.textContent = text
 
     return createP
+}
+
+function apagar (){
+    const field = document.getElementById("delete")
+    field.array.forEach(field => field.value='');
 }
 
 
@@ -36,14 +42,13 @@ function content(evento) {
         } else {
             roomDespair.appendChild(createElement("Por favor digita algo depois pressione o Enter para salvar!!!"))
         }
-        function apagar (){
-            const a = roomDespair = enviar.target.value 
-            if(a){
-                a= ""
-            }
-        }
-        btnApagar.addEventListener("click",apagar)
     }
 }
 
+function apagar (evento){
+    if(createElement(evento)){
+        return evento.target.value = ""
+    }
+}
+btnApagar.addEventListener("click",apagar)
 perguntar.addEventListener("keypress", content)
