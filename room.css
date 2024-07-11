@@ -71,6 +71,9 @@ body {
   overflow-y: auto;
 }
 
+.class{
+  line-height: normal;
+}
 .div_input{
     display: flex;
     align-items: center;

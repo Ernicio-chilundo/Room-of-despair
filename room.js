@@ -12,43 +12,16 @@ const btnApagar = document.getElementById("btnApagar")
 
 function createElement(text) {
     const createP = document.createElement("p")
-    createP.setAttribute("class", "class")
-    // createP.setAttribute("id","delete")
+    createP.setAttribute("class","class")
     createP.textContent = text
-
-    
-    console.log(createP);
     return createP
 }
-
-
-var btn = document.getElementById("btnLimpar")
-btn.addEventListener("click", remove);
-
-function remove (evento){
-    var anexar = createElement()
-    if(evento == "<p></p>"){
-    anexar.innerHTML = ''
-    }else{
-        alert("nehum paragrafo localizado")
-    }
-}
-
 
 function apagar() {
     if (document.querySelector("#roomDespair")) {
         document.querySelector("#roomDespair").innerHTML = ""
     }
 }
-// var btn = document.querySelector('.btn');
-// btn.addEventListener('click', remove);
-// var imagem = document.querySelector("img");
-
-// function remove() {
-//     imagem.remove(); // <--
-// };
-
-
 
 
 const from = createElement(`HELLO WELCOME 🙄🙄🙄!!!`)
