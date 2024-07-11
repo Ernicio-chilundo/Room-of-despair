@@ -19,18 +19,20 @@ function createElement(text) {
 }
 
 function apagar (){
-    const field = document.getElementById("delete")
-    field.array.forEach(field => field.value='');
+  if(document.querySelector("#roomDespair")){
+    document.querySelector("#roomDespair").innerHTML =""
+  }
 }
 
 
-const from = createElement("Hello Welcome🙄🙄🙄!!!")
+const from = createElement(`HELLO WELCOME 🙄🙄🙄!!!`)
 roomDespair.appendChild(from)
 
 function content(evento) {
     // roomDespair.textContent= " SEJA BEVIDO A PLANTAFORMA DO DESPERO"
     if (evento.key == "Enter") {
         const enviar = evento.textContent = evento.target.value
+        from.textContent = ""
         if (enviar !== "") {
             roomDespair.appendChild(createElement(enviar))
             const dados = banco.find(i => i.db.includes(enviar))
@@ -45,10 +47,5 @@ function content(evento) {
     }
 }
 
-function apagar (evento){
-    if(createElement(evento)){
-        return evento.target.value = ""
-    }
-}
 btnApagar.addEventListener("click",apagar)
 perguntar.addEventListener("keypress", content)
